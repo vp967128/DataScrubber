@@ -1,0 +1,29 @@
+<!--
+Last updated: 10/21/2022
+Description: Sets up page and button HTML that is formatted in ./index.css and ./index.js.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <!-- Sets tab title. -->
+  <head>
+    <meta charset="utf-8">
+    <title>Database Scrubber</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\bolto\Desktop\datascrubbing\src\App.css"></link>
+  </head>
+
+  <!-- Error message for when the user has not enabled JavaScript. -->
+  <body>
+    <script type=”text/javascript” src=”App.js”></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+
+  <!-- Section to allow user to submit necessary file. -->
+  <div id="app">
+    <form id="controls-form">
+      <input type="file" id="fileinput" accept=".csv" />
+    </form>
+  </div>
+</html>
