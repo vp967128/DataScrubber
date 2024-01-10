@@ -1,0 +1,39 @@
+Summary
+
+Website application that:
+- Allows user to type and enter queries on the frontend application, send to the backend, and display in tabular format.
+- Documentation is included within the site as well as troubleshooting.
+- Allows user to generate two sample entry files within the database (one with five sample entries and another with twenty sampl entries).
+- Features a number of buttons for ease of usage such as:
+*** Select All: Selects all queries and enters to table.
+*** Execute Query: Execute's user's query.
+*** Copy to Clipboard: Copies user's query to clipboard.
+*** Clear SQL: Clear's user's query.
+*** Clear Table: Refreshes page, removing user's query and table.
+*** Remove All Data Entries: Clears Logins table.
+*** SQL Help: Sends user to CodeAcademy for help with SQL.
+
+Documentation and Usage
+
+The purpose of this application is to allow a user to create a query into a table named Logins and then return the result of that query.
+To use this application:
+1. Enter your SQL query in the textarea below the toolbar.
+2. Press Execute Query.
+3. Click Choose File and browse until you locate results.csv. (Tip: You can find it in the .../datascrubbing/flask folder.)
+4. View the result in the table on the left. If your result is empty or has not changed, then you have likely entered an invalid query.
+5. Press Clear Table and click Yes in the prompt to remove your current view of the table and your query.
+Tip: If you would like to clear the database containing your table and all your work, click Remove All Data Entries.
+Tip: Use the Generate Sample Entries tab for a few basic sample tables.
+
+Troubleshooting
+
+This guide is intended to provide assistance to users in the event that an error occurs with this application.
+
+Problem: "I clicked Submit SQL but I can't see my table."
+Solution: After submitting your query through Submit SQL, you must click Choose File and select results.csv. If you have entered a correct SQL statement then this will display the table.
+
+Problem: "I tried to select all results in the table but the table came back empty.
+Solution: Either you have not entered data into the Logins table (through your own query or pregenerated samples), or your SQL statement is invalid. You can either select Pregenerated Commands and one of the Insert Sample Entries commands or create an INSERT INTO using the SQL query function to make your own table. If you are certain that your the data within the table has been generated then please ensure that your SQL statement is valid.
+
+Problem: "Why can't I upload the updated table?"
+Solution: If you already have a table loaded on the screen, then you will need to refresh the page before uploading the updated one. To refresh the table, please click Clear Table. Either copy and paste your query (you can easily copy your SQL query through Copy to Clipboard) to the refreshed page or send the query prior to refreshing — of which it will already be loaded within the file once the page has refreshed.
